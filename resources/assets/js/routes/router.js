@@ -24,6 +24,24 @@ const router =  new VueRouter({
             }
         },
         {
+            path: '/login',
+            components: {
+                default: All.PublicLayout,
+                'top-menu': All.WelcomeToolbar,
+                'app-footer': All.AppFooter
+            },
+            children: [
+                {
+                    path: '/',
+                    name: 'public.login',
+                    component: All.Login
+                }
+            ],
+            beforeEnter (to, from, next) {
+                AuthManager.optionalAuth(to, from, next);
+            }
+        },
+        {
             path: '/user',
             components: {
                 default: All.UserLayout,
@@ -39,6 +57,25 @@ const router =  new VueRouter({
             ],
             beforeEnter (to, from, next) {
                 AuthManager.forceAuth(to, from, next);
+            }
+        },
+        {
+            path: '/montos',
+            components: {
+                default: All.UserLayout,
+                'top-menu': All.UserToolbar,
+                'app-footer': All.AppFooter
+            },
+            children: [
+                {
+                    path: '/',
+                    name: 'admin.montos',
+                    component: All.Montos
+                }
+            ],
+            beforeEnter (to, from, next) {
+                AuthManager.optionalAuth(to, from, next);
+                //AuthManager.forceAuth(to, from, next);
             }
         },
         {

@@ -16,6 +16,10 @@ const ErrorLayout = () => import('../../components/layouts/master-layouts/ErrorL
 // Footers
 const AppFooter = () => import('../../components/layouts/footers/AppFooter');
 
+//Pages
+const Login = () => import('../../components/auth/Login');
+const Montos = () => import('../../components/montos/Montos');
+
 export {
     Welcome,
     User,
@@ -26,5 +30,7 @@ export {
     PublicLayout,
     UserLayout,
     ErrorLayout,
-    AppFooter
+    AppFooter,
+    Login,
+    Montos
 };

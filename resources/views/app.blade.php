@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="keywords" content="Manfred,Manfred047,Laravel,Quasar,Vue,SPA,API">
-        <meta name="twitter:title" content="Laravel - Quasar by Manfred047">
-        <meta name="description" content="Laravel - Quasar by Manfred047">
-        <meta property="og:title" content="Laravel - Quasar by Manfred047">
-        <meta property="og:description" content="Laravel - Quasar by Manfred047">
+        <meta name="keywords" content="CBTC">
+        <meta name="twitter:title" content="">
+        <meta name="description" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
 
-        <title>Laravel - Quasar by Manfred047</title>
+        <title>CBTC</title>
 
         <link rel="shortcut icon" type="image/jpg" href="{{ asset('img/logo.jpg') }}">
 

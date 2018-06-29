@@ -15,6 +15,9 @@ Vue.use(Quasar, {
     animations: All
 });
 
+import Vuetify from 'vuetify'
+Vue.use(Vuetify)
+
 import VeeValidate from 'vee-validate';
 Vue.use(VeeValidate, {
     inject: false
